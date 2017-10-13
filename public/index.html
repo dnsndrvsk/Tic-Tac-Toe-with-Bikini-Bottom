@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe with Bikini Bottom</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="page-wrap">
+    
+    <div class="player-lives">
+      <p>You have <span class="lives-count"></span></p>
+    </div>
+    
+    <div class="game-results">
+      <div class="results-best">
+        <p>Best result</p>
+        <p class="best-number">
+          <span>99</span><span> minutes </span><span> 99 </span><span> seconds</span>
+        </p>
+      </div>
+      <div class="results-prev">
+        <p>Previous result</p>
+        <p class="prev-number">
+          <span>99</span><span> minutes </span><span> 99 </span><span> seconds</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="spent-time">
+      <p class="descr">Total game time</p>
+      <p class="timer"><span>0</span><span> seconds</span><span></span><span></span></p>
+    </div>
+    
+    <div class="pop-up">
+      <div class="pop-up-table">
+        <div class="pop-up-cell">
+          <p>Welcome to the</p>
+          <h1><span class="tic-tac-toe">Tic-Tac-Toe</span> with <span class="bikini-bottom">Bikini Bottom</span></h1>
+          <p>Please, choose difficulty</p>
+          <div class="difficulty">Easy</div>
+          <div class="difficulty">Hard</div>
+          <div class="difficulty">Insane</div>
+          <div class="author"><span>Author:</span> Dionisy Andrievsky</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="level-info">
+    </div>
+
+    <div class="game-wrap">
+      <h1 class="game-header">Tic-tac-toe <br><span>with</span> <br>  <span class="char-name"></span></h1>
+
+      <div class="clearfix">
+        <div class="col-left">
+          <div class="player">
+            <div class="player-image">
+
+            </div>
+            <div class="player-dialog">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <table>
+            <tr id="row1">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="row2">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="row3">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="game-info"></div>
+
+      <button type="button" class="game-restart">Restart</button>
+
+      <button type="button" class="game-next">Next Level</button>
+
+      <button type="button" class="game-scratch">Start over</button>
+      
+      <button type="button" class="game-improve">Improve score</button>
+    </div>
+    
+  </div>
+<script src="js/dataHandler.js"></script>
+<script src="js/Character.js"></script>
+<script src="js/Characters/Patrick.js"></script>
+<script src="js/Characters/Squidward.js"></script>
+<script src="js/Characters/Krabs.js"></script>
+<script src="js/Characters/Plankton.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

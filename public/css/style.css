@@ -1,0 +1,678 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family:sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-wrap {
+  height: 100%;
+  padding-top: 50px;
+}
+
+.page-wrap.lvl-one {
+  background: url("../img/game-bg.jpeg") center repeat;
+  background-size: cover;
+}
+
+.page-wrap.lvl-two {
+  background: url("../img/spongebobspongewater351.jpg") center repeat;
+  background-size: cover;
+}
+
+.page-wrap.lvl-three {
+  background: url("../img/KrustyKrub.png") center repeat;
+  background-size: cover;
+}
+
+.page-wrap.lvl-four {
+  background: url("../img/Plankton_Retires_030.png") center repeat;
+  background-size: cover;
+}
+
+.game-wrap {
+  position: relative;
+  width: 850px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-bottom: 90px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0 65px skyblue;
+  box-shadow: 0 0 65px skyblue;
+  border-radius: 50%;
+}
+
+.game-header {
+  margin: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: darkorange;
+}
+
+.game-header span:first-of-type {
+  font-size: 30px;
+  color: darkseagreen;
+}
+
+.game-header span:last-of-type {
+  font-weight: 700;
+}
+
+.game-info {
+  position: relative;
+  z-index: 100;
+  height: 50px;
+  margin-bottom: 20px;
+  color: darkorange;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.game-info span {
+  color: cornflowerblue;
+  font-weight: 700;
+}
+
+.game-restart,
+.game-next,
+.game-scratch,
+.game-improve {
+  position: absolute;
+  z-index: -1;
+  bottom: 40px;
+  left: 50%;
+  display: block;
+  width: 200px;
+  margin-left: -100px;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  line-height: 40px;
+  font-size: 22px;
+  color: #fff;
+  background-color: skyblue;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px #111;
+  box-shadow: 1px 1px 5px #111;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.game-restart {
+  background-color: darksalmon;
+}
+
+.game-next {
+  background-color: mediumseagreen;
+}
+
+.game-scratch {
+  background-color: indianred;
+}
+
+.game-improve {
+  background-color: darkorange;
+  font-size: 20px;
+}
+
+.game-restart:active,
+.game-next:active,
+.game-scratch:active,
+.game-improve:active {
+  -webkit-box-shadow: inset 1px 1px 10px #111;
+  box-shadow: inset 1px 1px 10px #111;
+}
+
+@-webkit-keyframes hide {
+  0% { -webkit-transform: rotateY(0); transform: rotateY(0); z-index: 50 }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg); z-index: -1 }
+}
+
+@keyframes hide {
+  0% { -webkit-transform: rotateY(0); transform: rotateY(0); z-index: 50 }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg); z-index: -1 }
+}
+
+.hide {
+  -webkit-animation: hide .1s ease forwards;
+  animation: hide .1s ease forwards;
+}
+
+@-webkit-keyframes show {
+  0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg); z-index: -1 }
+  100% { -webkit-transform: rotateY(0); transform: rotateY(0); z-index: 50 }
+}
+
+@keyframes show {
+  0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg); z-index: -1 }
+  100% { -webkit-transform: rotateY(0); transform: rotateY(0); z-index: 50 }
+}
+
+.show {
+  -webkit-animation: show .4s ease forwards;
+  animation: show .4s ease forwards;
+}
+
+.player {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 390px;
+}
+
+.player-image {
+  height: 100%;
+}
+
+.player-image img {
+  position: relative;
+  z-index: 300;
+  display: none;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.player-dialog {
+  position: absolute;
+  z-index: 100;
+  display: table;
+  padding: 10px;
+  top: -50px;
+  right: -150px;
+  width: 200px;
+  height: 200px;
+  background: url("../img/cloud.svg") center no-repeat;
+  background-size: 100%;
+}
+
+.player-dialog p {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+table {
+  position: relative;
+  z-index: 1000;
+  float: right;
+  width: 320px;
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  border-spacing: 10px;
+}
+
+td {
+  width: 90px;
+  height: 92px;
+  line-height: 50px;
+  background-color: skyblue;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px #333;
+  box-shadow: 1px 1px 5px #333;
+  border-radius: 50%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+td img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+
+td.clicked {
+  color: #fff;
+  -webkit-box-shadow: inset 1px 1px 5px #555;
+  box-shadow: inset 1px 1px 5px #555;
+}
+
+td.matched {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+}
+
+td.animated {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.level-info {
+  position: fixed;
+  z-index: 300;
+  left: 50px;
+  top: 50px;
+  text-align: center;
+}
+
+.level-info p {
+  position: relative;
+  z-index: 50;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0 10px;
+  font-size: 26px;
+  line-height: 100%;
+  background-color:deepskyblue;
+  color: antiquewhite;
+  -webkit-box-shadow: 1px 1px 15px deepskyblue;
+  box-shadow: 1px 1px 15px deepskyblue;
+}
+
+.level-info p:nth-child(1) {
+  
+}
+
+.level-info p:nth-child(2) {
+  top: -30px;
+}
+
+.level-info p:nth-child(3) {
+  top: -60px;
+}
+
+.level-info p:nth-child(4) {
+  top: -90px;
+}
+
+.level-info p:not(.current) {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.level-info p.current {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 100;
+  background-color: darkorange;
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 15px darkorange;
+  box-shadow: 1px 1px 15px darkorange;
+}
+
+.level-info p.beaten {
+  background-color: gray;
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 15px gray;
+  box-shadow: 1px 1px 15px gray;
+}
+
+.level-info span {
+  font-size: 70px;
+  line-height: 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 15px deepskyblue;
+}
+
+.level-info p.beaten span {
+  text-shadow: 1px 1px 15px gray;
+}
+
+.level-info p.current:not(.beaten) span {
+  text-shadow: 1px 1px 15px darkorange;
+}
+
+.pop-up {
+  position: fixed;
+  display: none;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: #fff url("../img/oie_transparent.png") center bottom no-repeat;
+}
+
+.pop-up-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.pop-up-cell {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 50px;
+  font-size: 0;
+}
+
+.pop-up h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  color: grey;
+  font-size: 50px;
+}
+
+.tic-tac-toe {
+  color: lightsteelblue;
+}
+
+.bikini-bottom {
+  color:darksalmon;
+}
+
+.pop-up p {
+  margin: 0;
+  margin-bottom: 30px;
+  color: orange;
+  font-size: 40px;
+}
+
+.pop-up .difficulty {
+  display: inline-block;
+  padding: 30px 40px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  color: #fff;
+}
+
+.pop-up .difficulty:last-child {
+  margin-right: 0;
+}
+
+.difficulty:nth-child(4):hover {
+  background-color: pink;
+}
+
+.difficulty:nth-child(5):hover {
+  background-color: indianred;
+}
+
+.difficulty:nth-child(6):hover {
+  background-color: darkred;
+}
+
+
+.player-lives {
+  position: fixed;
+  z-index: 1000;
+  right: 60px;
+  top: 60px;
+  padding: 0 20px;
+  background-color: deepskyblue;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 15px deepskyblue;
+  box-shadow: 1px 1px 15px deepskyblue;
+  -webkit-transform: rotate(15deg) skewY(-10deg);
+  transform: rotate(15deg) skewY(-10deg);
+}
+
+.player-lives p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 50px;
+  color: #fff;
+}
+
+.player-lives .lives-count {
+  color: darkorange;
+  font-size: 80px;
+  line-height: 0;
+  font-weight: 700;
+  text-shadow: 0 0 5px darkorange;
+}
+
+.game-results {
+  position: fixed;
+  z-index: 300;
+  right: 40px;
+  bottom: 100px;
+  -webkit-transform: rotate(10deg) skewY(-10deg);
+  transform: rotate(10deg) skewY(-10deg);
+}
+
+.game-results p {
+  margin: 0;
+}
+
+.game-results p:last-child {
+  background-color: deepskyblue;
+  -webkit-box-shadow: 1px 1px 15px deepskyblue;
+  box-shadow: 1px 1px 15px deepskyblue;
+}
+
+.game-results p:first-child {
+  position: relative;
+  display: inline-block;
+  left: -60px;
+  margin-bottom: 40px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: gold;
+  border-bottom: 5px solid gold;
+  -webkit-box-shadow: 1px 1px 15px gold;
+  box-shadow: 1px 1px 15px gold;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.results-prev p:first-child {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  -webkit-box-shadow: 1px 1px 15px #fff;
+  box-shadow: 1px 1px 15px #fff;
+}
+
+.results-best {
+  margin-bottom: 30px;
+}
+
+.results-prev {
+  
+}
+
+.game-results span:nth-of-type(1),
+.game-results span:nth-of-type(3) {
+  position: relative;
+  z-index: 20;
+  color: darkorange;
+  font-size: 64px;
+  line-height: 0;
+  font-weight: 700;
+  text-shadow: 0 0 5px darkorange;
+}
+
+.game-results span:nth-of-type(2),
+.game-results span:nth-of-type(4) {
+  position: relative;
+  z-index: 50;
+  left: -40px;
+  bottom: -5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+.author {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  color: cornflowerblue;
+}
+
+.author span {
+  color: lightcoral;
+}
+
+.spent-time {
+  position: fixed;
+  bottom: 100px;
+  left: 160px;
+  z-index: 300;
+  -webkit-transform: rotate(-10deg) skewY(10deg);
+  transform: rotate(-10deg) skewY(10deg);
+}
+
+.spent-time .descr {
+  position: relative;
+  left: -60px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 5px solid darkorange;
+  -webkit-box-shadow: 1px 1px 15px dimgray;
+  box-shadow: 1px 1px 15px dimgray;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.spent-time p.timer {
+  margin: 0;
+  background-color: deepskyblue;
+  -webkit-box-shadow: 1px 1px 15px deepskyblue;
+  box-shadow: 1px 1px 15px deepskyblue;
+}
+
+.spent-time span:nth-child(odd) {
+  position: relative;
+  z-index: 20;
+  color: darkorange;
+  font-size: 64px;
+  line-height: 0;
+  font-weight: 700;
+  text-shadow: 0 0 5px darkorange;
+}
+
+.spent-time span:nth-child(even) {
+  position: relative;
+  z-index: 50;
+  left: -40px;
+  bottom: -5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+@media screen and ( max-width: 1300px ) {
+  
+  .level-info {
+    left: 30px;
+    top: 50px;
+  }
+
+  .level-info p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .level-info span {
+    font-size: 60px;
+  }
+  
+  .player-lives {
+    right: 50px;
+    top: 50px;
+  }
+
+  .player-lives p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  .player-lives .lives-count {
+    font-size: 75px;
+  }
+
+  .game-results {
+    top: auto;
+    right: 20px;
+    bottom: 40px;
+  }
+
+  .game-results p:first-child {
+    position: relative;
+    display: inline-block;
+    left: -40px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .results-best {
+    margin-bottom: 20px;
+  }
+
+  .results-prev {
+
+  }
+
+  .game-results span:nth-of-type(1),
+  .game-results span:nth-of-type(3) {
+    font-size: 44px;
+  }
+
+  .game-results span:nth-of-type(2),
+  .game-results span:nth-of-type(4) {
+    position: relative;
+    z-index: 50;
+    left: -40px;
+    bottom: -5px;
+    font-size: 14px;
+  }
+
+  
+  .spent-time {
+    bottom: 40px;
+    left: 80px;
+  }
+
+  .spent-time .descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .spent-time span:nth-child(odd) {
+    font-size: 54px;
+  }
+
+  .spent-time span:nth-child(even) {
+    font-size: 16px;
+  }
+  
+}
+
+
+
+
+
+

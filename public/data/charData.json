@@ -1,0 +1,210 @@
+{
+  "patrick": {
+    "images": [
+      {
+        "src": "img/patrick/patrick-wait.png",
+        "id": "wait",
+        "alt": "Patrick is waiting"
+      },
+      {
+        "src": "img/patrick/patrick-think.png",
+        "id": "think",
+        "alt": "Patrick is thinking"
+      },
+      {
+        "src": "img/patrick/patrick-win.jpg",
+        "id": "win",
+        "alt": "Patrick is happy"
+      },
+      {
+        "src": "img/patrick/patrick-lose.png",
+        "id": "lose",
+        "alt": "Patrick is complaining"
+      },
+      {
+        "src": "img/patrick/patrick-draw.png",
+        "id": "draw",
+        "alt": "Patrick is bored"
+      }
+    ],
+    "phrases": [
+      {
+        "state": "wait",
+        "phrase": "Can't wait until my turn!"
+      },
+      {
+        "state": "think",
+        "phrase": "Uuuhhh... mhhh... here!"
+      },
+      {
+        "state": "win",
+        "phrase": "Hooray!"
+      },
+      {
+        "state": "lose",
+        "phrase": "No way!"
+      },
+      {
+        "state": "draw",
+        "phrase": "We are both equally smart!"
+      }
+    ],
+    "color": "#F7ADAE"
+  },
+  "squidward": {
+    "images": [
+      {
+        "src": "img/squidward/squidward-wait.png",
+        "id": "wait",
+        "alt": "Squidward is waiting"
+      },
+      {
+        "src": "img/squidward/squidward-think.png",
+        "id": "think",
+        "alt": "Squidward is thinking"
+      },
+      {
+        "src": "img/squidward/squidward-win.png",
+        "id": "win",
+        "alt": "Squidward is happy"
+      },
+      {
+        "src": "img/squidward/squidward-lose.png",
+        "id": "lose",
+        "alt": "Squidward is complaining"
+      },
+      {
+        "src": "img/squidward/squidward-draw.png",
+        "id": "draw",
+        "alt": "Squidward is bored"
+      }
+    ],
+    "phrases": [
+      {
+        "state": "wait",
+        "phrase": "I can't wait you my entire life!"
+      },
+      {
+        "state": "think",
+        "phrase": "Well, I'd put it in here!"
+      },
+      {
+        "state": "win",
+        "phrase": "You know, this game is not that bad!"
+      },
+      {
+        "state": "lose",
+        "phrase": "Finally! I'm free!"
+      },
+      {
+        "state": "draw",
+        "phrase": "Thank you for wasting my time!"
+      }
+    ],
+    "color": "#AECFC4"
+  },
+  "krabs": {
+    "images": [
+      {
+        "src": "img/krabs/krabs-wait.png",
+        "id": "wait",
+        "alt": "Krabs is waiting"
+      },
+      {
+        "src": "img/krabs/krabs-think.png",
+        "id": "think",
+        "alt": "Krabs is thinking"
+      },
+      {
+        "src": "img/krabs/krabs-win.png",
+        "id": "win",
+        "alt": "Krabs is happy"
+      },
+      {
+        "src": "img/krabs/krabs-lose.png",
+        "id": "lose",
+        "alt": "Krabs is complaining"
+      },
+      {
+        "src": "img/krabs/krabs-draw.png",
+        "id": "draw",
+        "alt": "Krabs is bored"
+      }
+    ],
+    "phrases": [
+      {
+        "state": "wait",
+        "phrase": "I'm the best! In everything!"
+      },
+      {
+        "state": "think",
+        "phrase": "...Let's put it in here!"
+      },
+      {
+        "state": "win",
+        "phrase": "You owe me money!"
+      },
+      {
+        "state": "lose",
+        "phrase": "You are fired!"
+      },
+      {
+        "state": "draw",
+        "phrase": "For what I'm paying you?!"
+      }
+    ],
+    "color": "#FD1813"
+  },
+  "plankton": {
+    "images": [
+      {
+        "src": "img/plankton/plankton-wait.png",
+        "id": "wait",
+        "alt": "Plankton is waiting"
+      },
+      {
+        "src": "img/plankton/plankton-think.png",
+        "id": "think",
+        "alt": "Plankton is thinking"
+      },
+      {
+        "src": "img/plankton/plankton-win.png",
+        "id": "win",
+        "alt": "Plankton is happy"
+      },
+      {
+        "src": "img/plankton/plankton-lose.png",
+        "id": "lose",
+        "alt": "Plankton is complaining"
+      },
+      {
+        "src": "img/plankton/plankton-draw.png",
+        "id": "draw",
+        "alt": "Plankton is bored"
+      }
+    ],
+    "phrases": [
+      {
+        "state": "wait",
+        "phrase": "I'll teach you a lesson!"
+      },
+      {
+        "state": "think",
+        "phrase": "It's obvious! Here!"
+      },
+      {
+        "state": "win",
+        "phrase": "Finally! Secret formula!"
+      },
+      {
+        "state": "lose",
+        "phrase": "It can't be for real!"
+      },
+      {
+        "state": "draw",
+        "phrase": "Oops, we can try again."
+      }
+    ],
+    "color": "#75A69A"
+  }
+}
