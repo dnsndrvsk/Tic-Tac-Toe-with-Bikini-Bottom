@@ -1,5 +1,9 @@
 # Tic-Tac-Toe with Bikini Bottom ( The Game )
 
+<h2>Description:</h2>
+
+The game made of plain javascript, css and html. In the game you play tic-tac-toe with 4 unique characters and get :pineapple: if you win them.
+
 <hr>
 
 <h2>Launching the game:</h2>
