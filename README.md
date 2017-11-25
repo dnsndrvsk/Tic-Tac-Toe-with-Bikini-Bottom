@@ -1,4 +1,4 @@
-# Tic-Tac-Toe with Bikini Bottom ( The Game )
+# Tic-Tac-Toe with Bikini Bottom (The Game)
 
 <hr>
 
