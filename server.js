@@ -1,5 +1,5 @@
-var express = require('express');
-var opn = require('opn');
+var express = require('express'),
+    opn = require('opn');
 
 
 var app = express();
