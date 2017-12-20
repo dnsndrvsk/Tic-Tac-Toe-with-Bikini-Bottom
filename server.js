@@ -1,5 +1,5 @@
 var express = require('express'),
-    opn = require('opn');
+    opn = require('opn'),
 var app = express();
 
 var PORT = 3000;
