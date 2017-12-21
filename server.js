@@ -1,6 +1,6 @@
 var express = require('express'),
     opn = require('opn'),
-    app = express();
+    app = express(),
 
 var PORT = 3000;
 
