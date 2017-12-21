@@ -1,8 +1,7 @@
 var express = require('express'),
     opn = require('opn'),
     app = express(),
-
-var PORT = 3000;
+PORT = 3000;
 
 app.use(express.static('public'))
 
