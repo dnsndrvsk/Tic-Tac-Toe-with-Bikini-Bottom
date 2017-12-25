@@ -66,7 +66,6 @@ function getCharsData() {
   xhr.send();
 }
 
-
 /**
  * Reloads current level.
  */
