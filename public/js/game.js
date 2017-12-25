@@ -67,7 +67,6 @@ function getCharsData() {
 }
 
 
-
 /**
  * Reloads current level.
  */
