@@ -22,7 +22,6 @@ var AutoTurnSave,
     time,
     music = new Audio();
 
-
 /************************************
 *************EVENT SOUNDS************
 ************************************/
@@ -36,7 +35,6 @@ var clickSound = new Audio('sounds/click.mp3'),
 /************************************
 *************EVENT SOUNDS************
 ************************************/
-
 
 // Our data will be placed here.
 var loadedCharsData;
