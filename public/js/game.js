@@ -89,7 +89,6 @@ function restartTheGame() {
   restartBtn.classList.add('hide');
 }
 
-
 /**
  * Load next level.
  */
