@@ -160,7 +160,6 @@ function reloadTheGame() {
   helper.chooseDifficulty();
 }
 
-
 /**
  * Reload entire game.
  * Shows button "improveBtn".
