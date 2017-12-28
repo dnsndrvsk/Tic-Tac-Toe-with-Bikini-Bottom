@@ -122,7 +122,6 @@ function loadNextLevel() {
   nextBtn.classList.add('hide');
 }
 
-
 /**
  * Reload entire game.
  * Shows button "reloadBtn".
