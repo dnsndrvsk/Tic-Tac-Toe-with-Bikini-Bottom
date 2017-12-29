@@ -117,6 +117,7 @@ function loadNextLevel() {
   previousLevel = currentLevel;
   
   helper.playMusic();
+    
   nextBtn.classList.remove('show');
   nextBtn.classList.add('hide');
 }
@@ -193,6 +194,7 @@ function improveScore() {
   
   improveBtn.classList.remove('show');
   improveBtn.classList.add('hide');
+    
   helper.chooseDifficulty();
 }
 
