@@ -117,7 +117,6 @@ function loadNextLevel() {
   previousLevel = currentLevel;
   
   helper.playMusic();
-  
   nextBtn.classList.remove('show');
   nextBtn.classList.add('hide');
 }
