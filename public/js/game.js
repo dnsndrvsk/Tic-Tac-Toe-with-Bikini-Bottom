@@ -194,7 +194,6 @@ function improveScore() {
   
   improveBtn.classList.remove('show');
   improveBtn.classList.add('hide');
-  
   helper.chooseDifficulty();
 }
 
