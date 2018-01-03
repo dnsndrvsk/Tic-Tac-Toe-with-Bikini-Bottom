@@ -280,7 +280,6 @@ restartBtn.addEventListener('click', restartTheGame);
 nextBtn.addEventListener('click', loadNextLevel);
 reloadBtn.addEventListener('click', reloadTheGame);
 improveBtn.addEventListener('click', improveScore);
-
 /************************************
 *****Placing handlers on buttons*****
 ************************************/
