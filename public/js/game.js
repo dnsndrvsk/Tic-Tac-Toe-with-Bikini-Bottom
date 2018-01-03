@@ -276,7 +276,6 @@ character.say('wait');
 /************************************
 *****Placing handlers on buttons*****
 ************************************/
-
 restartBtn.addEventListener('click', restartTheGame);
 nextBtn.addEventListener('click', loadNextLevel);
 reloadBtn.addEventListener('click', reloadTheGame);
