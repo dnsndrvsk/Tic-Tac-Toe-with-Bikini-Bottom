@@ -273,7 +273,6 @@ helper.whichTurn();
 
 character.say('wait');
 
-
 /************************************
 *****Placing handlers on buttons*****
 ************************************/
