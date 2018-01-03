@@ -265,7 +265,6 @@ helper.chooseDifficulty();
 // into "loadedCharsData" variable.
 getCharsData();
 
-
 // Our character is now defined.
 helper.chooseCharacter();
 helper.changeLvlBg();
