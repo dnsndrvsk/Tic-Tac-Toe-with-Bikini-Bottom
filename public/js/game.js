@@ -287,7 +287,6 @@ improveBtn.addEventListener('click', improveScore);
 *****Placing handlers on buttons*****
 ************************************/
 
-
 // Reloads the game and shows main menu on "escape" event
 document.addEventListener('keydown', function(e) {
   
