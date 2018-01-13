@@ -36,7 +36,6 @@ var helper = (function(){
     }
 
     cellPosition++;
-
     isWin(rowID, cellPosition);
   }
   
