@@ -2,7 +2,7 @@
   
   var Character = {
     
-    "say"        : function(string) {
+    "say"       : function(string) {
       
       var playerDialog = document.querySelector('.player-dialog p');
       
