@@ -20,4 +20,4 @@ Censured version of this game is also <a href="https://play.google.com/store/app
 
 <hr/>
 
-<strong>PS: If you have Mozilla Firefox browser you can simply open <b>index.html</b> which is located inside <i>public</i> folder.</strong>
+<strong>PS: If you have Mozilla Firefox browser you can simply open <code>index.html</code> which is located inside <code>public</code> folder.</strong>
