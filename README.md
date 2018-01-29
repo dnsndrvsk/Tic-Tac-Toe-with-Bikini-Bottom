@@ -4,7 +4,7 @@ The first thing I've created. The game made of plain javascript, css and html. I
 
 <h3>Preview:</h3>
 
-![alt text](http://i103.fastpic.ru/big/2018/0129/5e/e3cad7117a25ea589d55d33bb65a3e5e.jpg)
+![alt text](http://i102.fastpic.ru/big/2018/0129/7c/61fa578ed8c6c14ae10fe3b178dfb47c.jpg)
 
 <h2>Launching the game:</h2>
 
