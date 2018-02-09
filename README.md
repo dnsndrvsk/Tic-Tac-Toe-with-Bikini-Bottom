@@ -8,7 +8,7 @@ Censured version of this game is also <a href="https://play.google.com/store/app
 </blockquote>
 <hr/>
 
-<h3>Preview:</h3>
+<h3>UI Preview:</h3>
 
 ![alt text](http://i102.fastpic.ru/big/2018/0129/7c/61fa578ed8c6c14ae10fe3b178dfb47c.jpg)
 
