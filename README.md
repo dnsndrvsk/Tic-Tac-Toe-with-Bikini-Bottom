@@ -1,6 +1,6 @@
 # Tic-Tac-Toe with Bikini Bottom (The Game)
 
-The first thing I've created. The game made of plain javascript, css and html. In the game you play tic-tac-toe with 4 unique characters and get a :pineapple: if you win them.
+The first thing I've made. The game made of plain javascript, css and html. In the game you play tic-tac-toe with 4 unique characters and get a :pineapple: if you win them.
 
 <hr/>
 <blockquote>
