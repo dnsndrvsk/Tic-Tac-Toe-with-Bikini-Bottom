@@ -1,5 +1,7 @@
 # Tic-Tac-Toe with Bikini Bottom (The Game)
 
+You can see this on <a href="https://tic-tac-toe-with-bikini-bottom.herokuapp.com/">heroku</a>
+
 The first thing I've made. The game made of plain javascript, css and html. In the game you play tic-tac-toe with 4 unique characters and get a :pineapple: if you win them.
 
 <hr/>
